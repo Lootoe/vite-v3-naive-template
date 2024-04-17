@@ -11,6 +11,7 @@ const randomizeCounter = countStore.randomizeCounter
 
 <template>
   <div class="center">
+    <hello-world></hello-world>
     <n-gradient-text type="info" :size="24">单倍：{{ count }}</n-gradient-text>
     <n-gradient-text type="info" :size="24">双倍：{{ doubleCount }}</n-gradient-text>
     <n-button type="primary" secondary @click="increment">加一</n-button>
