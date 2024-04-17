@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --mode development",
-    "build": "vite build",
+    "build:pad.staging": "vite build --mode staging -- platform=pad",
+    "build:pad.production": "vite build --mode production -- platform=pad",
+    "build:pc.staging": "vite build --mode staging -- platform=pc",
+    "build:pc.production": "vite build --mode production -- platform=pc",
     "preview": "vite preview",
     "lint": "npx eslint  --ext .js,.vue src/"
   },
