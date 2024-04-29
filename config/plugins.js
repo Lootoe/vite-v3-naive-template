@@ -2,7 +2,6 @@ import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
-import { mode, platform } from './env.js'
 
 const basePlugins = [
   vue(),
@@ -21,10 +20,6 @@ const basePlugins = [
 ]
 
 export const getPlugins = () => {
-  console.log('------------------')
-  console.log(mode)
-  console.log(platform)
-  console.log('------------------')
   const plugins = basePlugins
   return plugins
 }

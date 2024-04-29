@@ -1,8 +1,10 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import { getPlugins } from './config/plugins'
+import { printMode } from './config/env'
 
 export default defineConfig(() => {
+  printMode()
   return defineConfig({
     base: './',
     plugins: getPlugins(),

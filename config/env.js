@@ -13,4 +13,8 @@ dotenv.config({ path: process.cwd() + '/env/' + '.env.' + platform + '.' + mode 
 dotenv.config({ path: process.cwd() + '/env/' + '.env.' + platform })
 dotenv.config({ path: process.cwd() + '/env/' + '.env' })
 
-export { mode, platform }
+const printMode = () => {
+  console.log(`================== MODE:${mode} =================`)
+}
+
+export { mode, platform, printMode }
